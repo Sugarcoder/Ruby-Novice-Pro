@@ -1,0 +1,23 @@
+# Global variables are available from everywhere within an application,
+# including inside classes and objects. 
+
+# Global variable is not commonly used in Ruby.
+
+
+# You define global variables by using the "$" sign. 
+
+
+# Example: 
+
+def basic_method
+  puts x
+end
+
+
+$x = 10 
+basic_method    
+
+# Answer will be 10
+
+
+
