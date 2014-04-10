@@ -1,0 +1,21 @@
+# Basic variable is known as a local variable in Ruby.
+# Ex. x = 10, puts x 
+
+
+# Local variables = Can only be used in the same place it is defined.
+
+# Only use Local variables where they're being directly used. 
+
+
+
+# Example: 
+
+def basic_method
+  x = 50
+  puts x
+end
+
+
+x = 10
+basic_method
+puts x
