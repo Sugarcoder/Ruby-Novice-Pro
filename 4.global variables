@@ -20,4 +20,6 @@ basic_method
 # Answer will be 10
 
 
+# $ and @ characters that denote global characters are called "sigils".
+
 
