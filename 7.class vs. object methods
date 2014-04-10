@@ -1,0 +1,105 @@
+# "initialize" and "area" are Object methods. 
+
+# After you use the "area" method, it is available in all objects of the class. 
+
+# Methods are useful to have available on all object instances.
+
+# Methods are useful to work directly upon the Class itself.
+
+
+
+# Example: 
+
+class Candy
+  def self.test_method
+    puts "My name is King Candy and I rule Sugar Rush!" 
+  end
+  
+  def test_method
+    puts "This is King Candy from an instance of class Candy."
+  end
+end
+
+Candy.test_method               # Answer will be "My name is King Candy and I rule Sugar Rush"
+
+Candy.new.test_method           # This is King Candy from an instance of class Candy"
+
+
+
+
+
+# The Class above has 2 methods. First is a Class method, second is a Instance method.
+
+# Class method denotes "self." ("self" represents the current Class)
+
+# If no "self" prefix, then the methods are automatically Instance methods. 
+
+
+
+
+# Another way to do it is (personal preference):
+
+
+class Candy
+  def Candy.test_method 
+    puts "Bwahahaha, I'm evil and no one can stop me!"
+  end
+end
+
+
+# "self" makes it easier to rename the Class later on without having to update
+# the name of all Class methods. 
+
+
+
+
+
+
+# CLASS METHOD
+
+# Class method allows you to implement the "object counter" earlier.
+
+
+# Example: 
+
+class Candy 
+  def initialize 
+    if defined?(@@number_of_candy)
+      @@number_of_candy += 1
+    else 
+      @@number_of_candy = 1
+    end
+  end
+  
+  
+  def Candy.count
+    @@number_of_candy
+    end
+  end
+  
+  
+
+a = Candy.new
+puts Candy.count
+
+
+b = Candy.new
+puts Candy.count
+
+
+c = Candy.new
+puts Candy.count 
+
+
+
+
+# Candy.count = I simply asked the whole Class to do something, not just the objects. 
+
+
+
+
+
+
+
+
+
