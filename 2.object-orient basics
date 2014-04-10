@@ -1,0 +1,10 @@
+# Class = Blueprint of objects (Ex. class Shape)
+
+# Object = An instance of a class
+
+# Instance = What is happening (Ex. Instances of Shape objects)
+
+
+# Shape.new creates a new Shape instance and makes X reference that object. 
+
+# X is the Shape object of "class Shape"
