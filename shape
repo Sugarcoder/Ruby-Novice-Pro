@@ -35,7 +35,7 @@ class Triangle < Shape
   
 
   def area 
-    @base_width * height / 2
+    @base_width * @height / 2
   end
   
   
@@ -49,11 +49,36 @@ end
 
 
 
+puts area_of_triangle(6,6)
+
+
+puts perimeter_of_square(5)
+
+
+
+my_square = square.new(5)
+my_triangle = Triangle.new(6, 6, 7.81, 7.81, 7.81)
+
+
+puts my_square.area
+puts my_square.perimeter
+puts my_triangle.area
+puts my_triangle.perimeter
+
+
+
+
+# 7.81 is a validation routine to check the perimeters used to define the object 
+# and reject or recalculate those that are incorrect. 
 
 
 
 
 
 
-  
-  
+
+
+
+
+
+
