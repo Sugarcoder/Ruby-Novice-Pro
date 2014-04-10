@@ -1,0 +1,31 @@
+# Object variables (aka instance variables) have scope within.
+
+# Object variables are prefixed with "@". 
+
+
+# Example:
+
+class Square
+  def initialize(side_length) 
+    @side_length = side_length          @side_length is an object variable. 
+  end
+  
+  def area 
+    @side_length * @side_length
+  end
+end 
+
+
+a = Square.new(10)
+b = Square.new(5)
+
+puts a.area           # Answer will be 100
+puts b.area           # Answer will be 25
+
+
+
+
+
+
+
+
