@@ -1,0 +1,42 @@
+# Class variable is a major type of variable.
+
+# Class symbols start with "@@".
+
+# Class variables are useful for storing information relevant to all objects of a certain class.
+
+
+
+
+# Example (you can store the number of objects created in a certain class.
+
+class Candy
+  def initialize 
+    if defined?(@@number_of_candy)
+    @@number_of_candy += 1
+  else
+    @@number_of_candy = 1
+    end
+  end
+  
+  
+  def self.count
+    @@number_of_candy
+    end
+  end
+  
+a = Candy.new
+b = Candy.new
+
+puts Candy.count             
+
+
+
+# @@number_of_candy is a Class variable, so it is defined each time you create a new object. 
+
+
+
+
+
+  
+  
+
