@@ -1,0 +1,112 @@
+# Inheritance allows you to generate a taxonomy of classes and objects. 
+
+# Inheritance is like a family tree or a mind map. 
+
+# Example: 
+
+# class LivingThing
+    # class Plants
+    # class Animals > Eat, Sleep, Breathe
+      # Mammal
+        # Human > Sing, Dance, Love
+        # Primate
+      # Fish
+      
+  
+# Benefit if Inheritance = Classes lower down the hierarchy gets the features 
+
+# of those at the higher up (it's like socialism), and have their own specific features as well.
+
+
+
+
+# Example:
+
+class ParentClass
+  def method1
+    puts "This sentence is from method1."
+  end
+  
+  def method2 
+    puts "This sentence is from method2."
+  end
+end
+
+
+class ChildClass < ParentClass               # ChildClass inherits from the ParentClass
+   def method2                               # Since the ChildClass has "method2" as well, the method2 in ParentClass is ignored.
+    puts "This sentence is from method2's child class."        
+  end
+end
+
+my_object = ChildClass.new         
+my_object.method1              # Answer will be "This sentence is from method1
+my_object.method2              # Answer will be "This sentence is from method2's child class."
+
+
+
+
+
+
+# If you want to use the Child method to call an inherited method...
+
+
+class Zombie
+  def initialize(name)
+    @ZombieBob = ZombieBob
+  end
+  
+
+  def ZombieBob
+    return @ZombieBob
+  end
+  
+end
+
+
+
+class ZombieKiller < Zombie
+  def ZombieBob
+    "Brains..." + gross
+  end
+  
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
