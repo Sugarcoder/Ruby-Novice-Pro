@@ -1,0 +1,7 @@
+# Encapsulation = Ability for an object to have certain methods and attributes available for use publicly.
+                  Ability of objects to hide their constituent data behind an abstract interface.
+                  Helps you keep a lot of functionality within your classse, and gives you the security of only have a few ways for the world to manipulate your object's data.
+                  
+
+# Benefit of using encapulation:
+    You can perform checks on the data before assigning it to the objects.
