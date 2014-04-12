@@ -65,9 +65,9 @@ end
 
 
 
-class ZombieKiller < Zombie
+class ZombiePeople < Zombie
   def ZombieBob
-    "Brains..." + gross
+    "Brains..." + yummy
   end
   
 end
