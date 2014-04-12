@@ -1,0 +1,16 @@
+# Instance variables = returns the names of any object variables associated with an instance.
+
+
+# Example:
+
+class Princess
+  attr_accessor :name, :age
+end
+
+
+p = Princess.new
+p.name = "Bubblegum"
+p.age = 16
+puts p.instance_variables
+
+
