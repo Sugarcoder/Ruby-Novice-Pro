@@ -2,6 +2,18 @@
 
 # Inheritance is like a family tree or a mind map. 
 
+# The benefit of using Inheritance is that you can implement generic functionality in generic Classes,
+# and implement specific functionality in specific Child classes.
+
+# Inheritance saves a lot of repetition.
+
+# If you make changes to the Parent Class, Child classes will change too.
+
+
+
+
+
+
 # Example: 
 
 # class LivingThing
@@ -71,41 +83,6 @@ class ZombiePeople < Zombie
   end
   
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
