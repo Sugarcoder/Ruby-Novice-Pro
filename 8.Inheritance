@@ -11,9 +11,6 @@
 
 
 
-
-
-
 # Example: 
 
 # class LivingThing
@@ -83,7 +80,5 @@ class ZombiePeople < Zombie
   end
   
 end
-
-
 
 
