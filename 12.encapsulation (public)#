@@ -1,0 +1,73 @@
+# You could put "private" before one method, and then revert back to public methods again after using "public".
+
+# Example:
+
+
+class Princess
+  def this_is_public
+     ...
+  end
+  
+
+private
+
+   def this_is_private
+      ...
+   end
+   
+
+public
+
+   def this_is_public_again
+      ...
+   end
+   
+end
+
+
+
+# You can use "private" as a command by putting in symbols representing the methods you want to keep private.
+
+
+# Example: 
+
+class Princess
+   
+   def this_is_public; ...; end
+   
+   
+   def this_is_private; ...; end
+   
+   def this_is_private_again; ...; end
+   
+   def this_is_public_again; ...; end
+   
+   
+   
+   
+private :this_is_private, :this_is_private_again           
+
+end
+
+
+# "private" has to come after the methods are defined. 
+
+
+
+
+
+# Ruby supports lines of code ending with ";" and allows you to put multiple lines of code on a single line.
+
+# Example: 
+
+x = 10; x +=1; puts x
+
+
+
+
+
+
+
+
+
+
