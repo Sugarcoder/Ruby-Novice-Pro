@@ -1,3 +1,14 @@
 # Polymorphism = The concept of writing code that can work with objects of multiple types and classes at once.
 
+# + works for adding numbers, joining strings, and adding arrays together. 
 
+
+# Example: 
+
+class Animal
+   attr_accessor :name
+   
+   def initialize(name)
+      @name = name
+   end
+   
