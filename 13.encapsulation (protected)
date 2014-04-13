@@ -1,0 +1,39 @@
+# "protected" makes the method private, but within the scope of a class, rather than within a single object. 
+
+# You can call a "protected" method from the methods of any object that is a member of the same class.
+
+
+# Example:
+
+class Princess
+  def initialize(age)
+     @age = age
+  end
+  
+  
+   def age
+     @age
+   end
+
+
+   def age_difference_with(other_princess)
+      (self.age - other_princess.age).abs
+    end
+    
+    
+    protected :age
+end
+
+
+
+Bubblegum = Princess.new(16)
+LSP = Princess.new(13)
+
+puts LSP.age_difference_with(Bubblegum)
+puts LSP.age
+
+
+
+
+# The "age" method cannot be used directly because it is protected.
+# If "age" was made private, other_princess.age would fail, too. 
