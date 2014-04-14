@@ -1,0 +1,30 @@
+# Modules = You can share functionality between different classes. 
+
+# Modules can be included into other classes. 
+
+# Example:
+
+
+module Brains
+   def class_name
+      self.class.to_s 
+   end
+end
+
+
+class Zombies
+   include Brains
+end
+
+
+x = Zombies.new
+puts x.class_name
+
+
+
+
+# Modules are like a tab within a folder. 
+
+# It is similar to Classes, but used as a way to organize things..
+
+# So if Brains is a tab, it is in the Zombies folder.
