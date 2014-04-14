@@ -1,0 +1,23 @@
+# Constants = Special variables that do not change and are permanent throughout an application.
+# Ex. Pi = 3.14...
+
+
+# Constants are defined within the scope of the current class and available to all child classes.
+
+# Example:
+
+Pi = 3.14
+
+class Apple_Pie
+   Pi = 4.5                            # Apple_Pie has its own definition of Pi. If you removed it, Pi would be 3.14 (defined globally)
+  
+   def Apple_Pie.circumference(radius)
+      radius * 2 * Pi
+   end
+   
+end
+
+
+puts Apple_Pie.circumference(10)       # Answer will be 90.0  
+
+
