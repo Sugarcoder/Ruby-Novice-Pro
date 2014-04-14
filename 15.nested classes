@@ -1,0 +1,13 @@
+# Nested classes = Defining classes within a class.
+# Nested classes are useful when a class depends on another class.
+# Nested classes are also useful when you want to separate classes into groups of classes. 
+
+# Example:
+
+class Baking 
+     class Macarons
+     end
+
+     class Cupcakes
+     end
+end
