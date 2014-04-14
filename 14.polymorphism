@@ -5,10 +5,50 @@
 
 # Example: 
 
-class Animal
-   attr_accessor :name
-   
-   def initialize(name)
-      @name = name
+
+class Candy
+     attr_accessor :sweet
+
+     def initialize(sweet)
+          @sweet = sweet
+     end
+end
+
+
+class Gum < Candy
+   def talk
+      “This is chewy!”
    end
+end
+
+
+class Sour_Patch < Candy
+   def talk
+       “This is sour!”
+   end
+end
+
+end
+
+
+candies = [Gum.new(“Peppermint”), Sour_Patch.new(“Kids”), Gum.new(“Spearmint”)]
+candies.each do |candy|
+
+puts candy.talk
+
+end
+
+
+# If you were to add “inheritance” under class Gum < Candy (ex. class Sugar_Free < Candy; Gummy.new.talk), you would get “This is chewy!”.
+
+
+# Array, Hash, String classes have their own polymorphism methods.
+
+# Exmaple:
+
+puts 1000.to_s     # to_s = to String
+puts [1,2,3].to_s
+puts ({ :name => “Finn”, age => 13}).to_s
+   
+   
    
