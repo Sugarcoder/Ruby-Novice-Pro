@@ -11,3 +11,47 @@ class Baking
      class Cupcakes
      end
 end
+
+
+
+# There are 2 ways that you can access Macarons and Cupcakes. 
+
+# Example:
+
+class Baking
+     def Baking.give_me_sweets
+        Macarons.new
+     end
+     
+     
+     class Cupcakes
+     end
+     
+     
+     class Macarons 
+        def cute_circles
+           "I am cute and sweet."
+        end
+     
+     end
+     end
+end 
+        
+        
+a = Baking.give_me_sweets         # This is one way of calling "class Macarons" under "class Baking" 
+puts a.cute_circles              
+
+
+a = Baking:: Macarons.new         # This is another way of calling "class Macarons" under "class Baking".
+puts a.cute_circles
+
+
+
+a = Macarons.new                  # This line won't work because class Macarons is not stand alone. It is embedded under another class.
+
+puts a.cute_circles 
+
+
+
+
+      
