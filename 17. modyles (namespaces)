@@ -1,0 +1,100 @@
+# Namespaces = A type of module used to avoid name-related clashes. 
+
+
+# Codes can clash if they are named similarly. 
+
+
+# Example: 
+
+def random                 # This 'random' method is located in "number_stuff.rb" file
+  rand(1000)
+end
+
+
+# AND...
+
+
+def random                 # This 'random' method is located in "letter_stuff.rb" file
+   (rand(26) + 50).chr
+end
+
+
+
+# If you put...
+
+require 'number_stuff'    
+require 'letter_stuff'
+
+puts random
+
+
+# It would only return one of the "random". The other "random" will be lost. 
+
+
+
+
+# MODULES
+
+
+# Modules (like Namespace) help to solve these conflicts by providing 'namespaces' that can contain any number
+# of classes, methods and constants.
+
+# Modules provide ways to organize methods, classes, and constants into separate namespaces.
+
+
+
+# Example #1: 
+
+
+module NumberStuff
+   def NumberStuff.random
+      rand(1000)
+   end
+end                           
+
+
+
+module LetterStuff
+   def LetterStuff.random
+      (rand(26) + 50).chr
+   end
+end                           
+
+
+
+puts NumberStuff.random         # Answer will be 330
+puts LetterStuff.random         # Answer will be 3
+
+
+
+
+# Example #2: 
+
+ 
+module Fruit
+   class Banana
+      attr_accessor :length
+   end
+end
+
+
+module Veggies
+   class Beans
+      attr_accessor :name
+   end
+end
+
+
+
+a = Fruit::Banana.new
+a.length = 10
+
+
+b = Veggies::Beans.new
+b.name = "Edamame"
+
+
+
+
+
+
