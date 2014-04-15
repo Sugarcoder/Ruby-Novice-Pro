@@ -1,0 +1,14 @@
+# Comparable module  provides methods that give other classes comparison operators such as <, <=, ==, =>, >, 
+# and "between?" (returns true if the value is between the two parameters provided. 
+
+# Comparable module uses <=> operator on the classes that include it. 
+# <=> returns -1 if the provided parameter is higher than the object's value, 0 if they are equal and 1 if the value is higher than the parameter.
+
+
+# Example: 
+1 <=> 2     # Answer is -1
+1 <=> 1     # Answer is 0 
+2 <=> 1     # Answer is 1
+
+
+
