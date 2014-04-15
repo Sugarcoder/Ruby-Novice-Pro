@@ -1,0 +1,14 @@
+# We can include enumerable modules into our own classes to gain more functionality.
+
+# The Class must contain the "each" method.
+
+# If you want to write codes once and share it between unrelated classes, 
+# you can put it in modules to be “mixed in” with your classes.
+
+
+# Example:
+
+# Using the Array "each" method = contains collect, detect, find, find_all, include?, max, min, sort, to_a
+
+# Example of "collect": [1,2,3,4].collect { |i| i.to_s + "x" }
+
